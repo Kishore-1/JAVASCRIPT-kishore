@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+          *
+          {
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+          }
+          .header
+          {
+            height: 70px;
+            width: 100%;
+            background-color: gray;
+          }
+          .carousal
+          {
+            width:100%;
+            height:750px;
+            /* background-color: red; */
+            position: relative;
+            overflow: hidden;
+          }
+          .slider
+          {
+            height: 750px;
+            /* background-color: green; */
+            width: 600%;
+            display: flex;
+            /* transition: .5s; */
+            margin-left: -100%;
+          }
+          .slider_child
+          {
+            height:750px;
+            width: calc(100%/6);
+            /* background-color: yellow; */
+            /* font-size: 100px;
+            text-align: center;
+            line-height: 300px; */
+            overflow: hidden;
+        }
+        .slider_child>img
+        {
+            width: 100%;
+            height: 100%;
+        }
+        /* img
+        { 
+          width: 100%;
+          height: 100%;
+        } */
+        .buttons
+        {
+            width:100%;
+            height:70px;
+            /* background-color: black; */
+            position: absolute;
+            top: 365px;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 30px;
+            padding-right: 30px;
+
+        }
+        .move
+        {
+            width: 70px;
+            height: 70px;
+            background-color: rgba(0,0,0,.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            font-weight: bold;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+        }
+        .indicators
+        {
+            width: 100%;
+            height: 10px;
+            /* background-color: red; */
+            position: absolute;
+            bottom: 3%;
+            display: flex;
+            justify-content: center;
+            column-gap: 10px;
+            margin-left: 10px;
+            
+        }
+        span
+        {
+            width: 10px;
+            height: 10px;
+            background-color: white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            
+        </header>
+    <section class="carousal">
+
+        <div class="buttons">
+            
+            <div class="move" onclick="prevslide()">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div class="move" onclick="nextslide()">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+        
+       <div class="indicators">
+        <span  onclick="movetoslide(1)"></span>
+        <span  onclick="movetoslide(2)"></span>
+        <span  onclick="movetoslide(3)"></span>
+        <span  onclick="movetoslide(4)"></span>
+        <span  onclick="movetoslide(5)"></span>
+       </div>
+      
+
+        <div class="slider">
+            
+            <div class="slider_child">
+                <img src="Media\BrBa.jpg">
+            </div>
+
+            <div class="slider_child">
+                <img src="Media\Joker.jpg">
+            </div>
+
+            <div class="slider_child">
+                <img src="Media\Inception.jpg">
+            </div>
+
+            <div class="slider_child">
+                <img src="Media\BrBad title.jpg">
+            </div>
+
+            <div class="slider_child">
+                <img src="Media\BrBa.jpg">
+            </div>
+
+            <div class="slider_child">
+                <img src="Media\Joker.jpg">
+            </div>
+
+        </div>
+    </section>
+
+        <script src="webpage.js"></script>
+    </body>
+</html>
