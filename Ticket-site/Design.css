@@ -1,0 +1,167 @@
+/* Created by Luzardo Lopez */
+
+/* Grabbing selectors to style the website */
+
+/* Styling the header */
+/* Adding space to the head */
+/* Adding marging */
+
+h1 {
+
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 10px 0px 10px 0px;
+
+}
+
+/* Styling the labels */
+
+label {
+
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+/* Only the strong tags */
+
+strong {
+
+    color: #2493df; 
+
+}
+
+/* Now the footer */
+/* Applying text styles */
+/* Align the footer to the center */
+/* Adding marging */
+
+footer {
+
+    color: #595959;
+    font-size: 14px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+
+}
+
+/* Styling the section */
+/* Padding the section */
+/* Styling the background color */
+
+section {
+
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+
+}
+
+/* Styling the body */
+
+body 
+{
+background-image: url("D:\wallpaper\oddesy.jpg");
+
+
+}
+
+/* Styling the fom */
+/* Positioning */
+
+#buy {
+
+    background-color: #687373;
+    margin-top: 10px;
+    color: #fcfcfc;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+/* Styling the number section of the form */
+
+input[type="number"] {
+
+    padding: 2px;
+    align-content: center;
+    width: 50px;
+
+}
+
+/* Styling the button of the form */
+
+input[type="button"] { 
+
+    background-color: #2493df;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+    height: 40px;
+    width: 60%;
+
+}
+
+
+
+/* Styling the list */
+
+ul {
+    
+    list-style-type: square;
+    list-style-position: inside;
+    padding-left: 10px;
+
+}
+
+/* Styling the table */
+
+table {
+
+    border-collapse: collapse;
+
+}
+
+td, th {
+
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+th {
+
+    background-color: #2493df;
+
+}
+
+/* Styling the form 2 */
+
+form {
+
+    display: flex;
+
+}
+
+.form-section {
+
+    flex: 1;
+
+}
+
+/* Positioning the image */
+
+img {
+
+    float: left;
+    margin-right: 10px;
+
+}
+
+
+
+
+
